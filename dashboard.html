@@ -1,0 +1,47 @@
+
+    <!doctype html>
+    <html>
+    <head>
+      <meta charset="utf-8">
+      <title>SOC Analyst Workbench — Dashboard</title>
+      <style>
+        body { font-family: Arial, sans-serif; margin:20px }
+        table { border-collapse: collapse; width: 100%; margin-bottom: 1rem }
+        table, th, td { border: 1px solid #ddd }
+        th, td { padding: 8px }
+        tr:hover { background:#f6f6f6; cursor:pointer }
+        .incident-details { display:none; margin: 10px 0 20px 0 }
+        .inner { width: 100% }
+      </style>
+    </head>
+    <body>
+      <h1>SOC Analyst Workbench — Dashboard (Static)</h1>
+      <p>Click an incident row to reveal details and download the generated report.</p>
+      <h2>Incidents</h2>
+      <table id="incidents">
+        <thead><tr><th>ID</th><th>Source IP</th><th>Severity</th><th>Kill Chain</th><th>Disposition</th></tr></thead>
+        <tbody>
+        
+        </tbody>
+      </table>
+
+      <div id="details">
+        
+      </div>
+
+      <script>
+        const rows = document.querySelectorAll('#incidents tbody tr');
+        rows.forEach(r => {
+          r.addEventListener('click', function() {
+            const iid = this.getAttribute('data-iid');
+            // hide all
+            document.querySelectorAll('.incident-details').forEach(function(d){ d.style.display='none' });
+            const det = document.getElementById('details-' + iid);
+            if (det) det.style.display = 'block';
+            if (det) det.scrollIntoView({behavior:'smooth'});
+          });
+        });
+      </script>
+    </body>
+    </html>
+    
