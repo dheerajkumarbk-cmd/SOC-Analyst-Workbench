@@ -1,0 +1,11 @@
+timestamp,source_ip,alert_type,detail,mitre,severity,suppressed,suppression_reason
+2026-08-18 15:29:37,203.0.113.55,port_scan,"ports=[1006, 1024, 1030, 1050, 1071, 1073, 1078, 1082]",T1046,Medium,False,
+2026-08-18 15:34:21,203.0.113.55,brute_force,failed_count=11,T1110,High,False,
+2026-08-18 15:40:21,203.0.113.55,privilege_escalation,privilege escalation after login,T1068,Critical,False,
+2026-08-18 15:00:05,192.0.2.110,impossible_travel,alice from CN to BR,T1078,Medium,False,
+2026-08-18 15:00:09,192.0.2.234,impossible_travel,bob from IN to DE,T1078,Medium,False,
+2026-08-18 15:03:56,192.0.2.179,impossible_travel,carol from JP to CN,T1078,Medium,False,
+2026-08-18 15:03:08,192.0.2.26,impossible_travel,dave from JP to US,T1078,Medium,False,
+2026-08-18 15:02:32,192.0.2.148,impossible_travel,eve from IN to CN,T1078,Medium,False,
+2026-08-18 15:00:47,192.0.2.243,impossible_travel,frank from IN to US,T1078,Medium,False,
+2026-08-18 15:01:21,192.0.2.71,impossible_travel,mallory from JP to IN,T1078,Medium,False,

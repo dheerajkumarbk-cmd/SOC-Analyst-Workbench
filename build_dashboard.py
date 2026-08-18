@@ -5,7 +5,7 @@ from pathlib import Path
 INC_FILE = Path('incidents.json')
 ALERTS_FILE = Path('alerts.csv')
 LOGS_FILE = Path('logs.csv')
-OUT = Path('dashboard.html')
+OUT = Path('index.html')
 
 
 def load_data():
@@ -83,7 +83,7 @@ def build():
 
     html = template.replace('__INCIDENTS__', incidents_html).replace('__DETAILS__', details_html)
 
-    OUT.write_text(html)
+    OUT.write_text(html, encoding='utf-8')
     print('Wrote', OUT.resolve())
 
 

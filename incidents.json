@@ -1,0 +1,210 @@
+[
+  {
+    "incident_id": "I0001",
+    "source_ip": "192.0.2.110",
+    "start_time": "2026-08-18 15:00:05",
+    "alerts": [
+      {
+        "timestamp": "2026-08-18 15:00:05",
+        "source_ip": "192.0.2.110",
+        "alert_type": "impossible_travel",
+        "detail": "alice from CN to BR",
+        "mitre": "T1078",
+        "severity": "Medium",
+        "suppressed": false,
+        "suppression_reason": "",
+        "ts": "2026-08-18 15:00:05"
+      }
+    ],
+    "severity": "Medium",
+    "kill_chain_stages": [
+      "Initial Access"
+    ],
+    "disposition": "Open"
+  },
+  {
+    "incident_id": "I0002",
+    "source_ip": "192.0.2.148",
+    "start_time": "2026-08-18 15:02:32",
+    "alerts": [
+      {
+        "timestamp": "2026-08-18 15:02:32",
+        "source_ip": "192.0.2.148",
+        "alert_type": "impossible_travel",
+        "detail": "eve from IN to CN",
+        "mitre": "T1078",
+        "severity": "Medium",
+        "suppressed": false,
+        "suppression_reason": "",
+        "ts": "2026-08-18 15:02:32"
+      }
+    ],
+    "severity": "Medium",
+    "kill_chain_stages": [
+      "Initial Access"
+    ],
+    "disposition": "Open"
+  },
+  {
+    "incident_id": "I0003",
+    "source_ip": "192.0.2.179",
+    "start_time": "2026-08-18 15:03:56",
+    "alerts": [
+      {
+        "timestamp": "2026-08-18 15:03:56",
+        "source_ip": "192.0.2.179",
+        "alert_type": "impossible_travel",
+        "detail": "carol from JP to CN",
+        "mitre": "T1078",
+        "severity": "Medium",
+        "suppressed": false,
+        "suppression_reason": "",
+        "ts": "2026-08-18 15:03:56"
+      }
+    ],
+    "severity": "Medium",
+    "kill_chain_stages": [
+      "Initial Access"
+    ],
+    "disposition": "Open"
+  },
+  {
+    "incident_id": "I0004",
+    "source_ip": "192.0.2.234",
+    "start_time": "2026-08-18 15:00:09",
+    "alerts": [
+      {
+        "timestamp": "2026-08-18 15:00:09",
+        "source_ip": "192.0.2.234",
+        "alert_type": "impossible_travel",
+        "detail": "bob from IN to DE",
+        "mitre": "T1078",
+        "severity": "Medium",
+        "suppressed": false,
+        "suppression_reason": "",
+        "ts": "2026-08-18 15:00:09"
+      }
+    ],
+    "severity": "Medium",
+    "kill_chain_stages": [
+      "Initial Access"
+    ],
+    "disposition": "Open"
+  },
+  {
+    "incident_id": "I0005",
+    "source_ip": "192.0.2.243",
+    "start_time": "2026-08-18 15:00:47",
+    "alerts": [
+      {
+        "timestamp": "2026-08-18 15:00:47",
+        "source_ip": "192.0.2.243",
+        "alert_type": "impossible_travel",
+        "detail": "frank from IN to US",
+        "mitre": "T1078",
+        "severity": "Medium",
+        "suppressed": false,
+        "suppression_reason": "",
+        "ts": "2026-08-18 15:00:47"
+      }
+    ],
+    "severity": "Medium",
+    "kill_chain_stages": [
+      "Initial Access"
+    ],
+    "disposition": "Open"
+  },
+  {
+    "incident_id": "I0006",
+    "source_ip": "192.0.2.26",
+    "start_time": "2026-08-18 15:03:08",
+    "alerts": [
+      {
+        "timestamp": "2026-08-18 15:03:08",
+        "source_ip": "192.0.2.26",
+        "alert_type": "impossible_travel",
+        "detail": "dave from JP to US",
+        "mitre": "T1078",
+        "severity": "Medium",
+        "suppressed": false,
+        "suppression_reason": "",
+        "ts": "2026-08-18 15:03:08"
+      }
+    ],
+    "severity": "Medium",
+    "kill_chain_stages": [
+      "Initial Access"
+    ],
+    "disposition": "Open"
+  },
+  {
+    "incident_id": "I0007",
+    "source_ip": "192.0.2.71",
+    "start_time": "2026-08-18 15:01:21",
+    "alerts": [
+      {
+        "timestamp": "2026-08-18 15:01:21",
+        "source_ip": "192.0.2.71",
+        "alert_type": "impossible_travel",
+        "detail": "mallory from JP to IN",
+        "mitre": "T1078",
+        "severity": "Medium",
+        "suppressed": false,
+        "suppression_reason": "",
+        "ts": "2026-08-18 15:01:21"
+      }
+    ],
+    "severity": "Medium",
+    "kill_chain_stages": [
+      "Initial Access"
+    ],
+    "disposition": "Open"
+  },
+  {
+    "incident_id": "I0008",
+    "source_ip": "203.0.113.55",
+    "start_time": "2026-08-18 15:29:37",
+    "alerts": [
+      {
+        "timestamp": "2026-08-18 15:29:37",
+        "source_ip": "203.0.113.55",
+        "alert_type": "port_scan",
+        "detail": "ports=[1006, 1024, 1030, 1050, 1071, 1073, 1078, 1082]",
+        "mitre": "T1046",
+        "severity": "Medium",
+        "suppressed": false,
+        "suppression_reason": "",
+        "ts": "2026-08-18 15:29:37"
+      },
+      {
+        "timestamp": "2026-08-18 15:34:21",
+        "source_ip": "203.0.113.55",
+        "alert_type": "brute_force",
+        "detail": "failed_count=11",
+        "mitre": "T1110",
+        "severity": "High",
+        "suppressed": false,
+        "suppression_reason": "",
+        "ts": "2026-08-18 15:34:21"
+      },
+      {
+        "timestamp": "2026-08-18 15:40:21",
+        "source_ip": "203.0.113.55",
+        "alert_type": "privilege_escalation",
+        "detail": "privilege escalation after login",
+        "mitre": "T1068",
+        "severity": "Critical",
+        "suppressed": false,
+        "suppression_reason": "",
+        "ts": "2026-08-18 15:40:21"
+      }
+    ],
+    "severity": "Critical",
+    "kill_chain_stages": [
+      "Reconnaissance",
+      "Initial Access",
+      "Privilege Escalation"
+    ],
+    "disposition": "Open"
+  }
+]

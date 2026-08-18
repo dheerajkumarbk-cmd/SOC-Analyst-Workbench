@@ -3,7 +3,7 @@
     <html>
     <head>
       <meta charset="utf-8">
-      <title>SOC Analyst Workbench � Dashboard</title>
+      <title>SOC Analyst Workbench — Dashboard</title>
       <style>
         body { font-family: Arial, sans-serif; margin:20px }
         table { border-collapse: collapse; width: 100%; margin-bottom: 1rem }
@@ -15,18 +15,34 @@
       </style>
     </head>
     <body>
-      <h1>SOC Analyst Workbench � Dashboard (Static)</h1>
+      <h1>SOC Analyst Workbench — Dashboard (Static)</h1>
       <p>Click an incident row to reveal details and download the generated report.</p>
       <h2>Incidents</h2>
       <table id="incidents">
         <thead><tr><th>ID</th><th>Source IP</th><th>Severity</th><th>Kill Chain</th><th>Disposition</th></tr></thead>
         <tbody>
-        
+        <tr data-iid="I0001"><td>I0001</td><td>192.0.2.110</td><td>Medium</td><td>Initial Access</td><td>Open</td></tr>
+<tr data-iid="I0002"><td>I0002</td><td>192.0.2.148</td><td>Medium</td><td>Initial Access</td><td>Open</td></tr>
+<tr data-iid="I0003"><td>I0003</td><td>192.0.2.179</td><td>Medium</td><td>Initial Access</td><td>Open</td></tr>
+<tr data-iid="I0004"><td>I0004</td><td>192.0.2.234</td><td>Medium</td><td>Initial Access</td><td>Open</td></tr>
+<tr data-iid="I0005"><td>I0005</td><td>192.0.2.243</td><td>Medium</td><td>Initial Access</td><td>Open</td></tr>
+<tr data-iid="I0006"><td>I0006</td><td>192.0.2.26</td><td>Medium</td><td>Initial Access</td><td>Open</td></tr>
+<tr data-iid="I0007"><td>I0007</td><td>192.0.2.71</td><td>Medium</td><td>Initial Access</td><td>Open</td></tr>
+<tr data-iid="I0008"><td>I0008</td><td>203.0.113.55</td><td>Critical</td><td>Reconnaissance → Initial Access → Privilege Escalation</td><td>Open</td></tr>
         </tbody>
       </table>
 
       <div id="details">
-        
+        <div class="incident-details" id="details-I0001"><table class="inner"><thead><tr><th>Timestamp</th><th>Event</th><th>Detail</th></tr></thead><tbody><tr><td>2026-08-18 15:00:05</td><td>impossible_travel</td><td>alice from CN to BR</td></tr></tbody></table><p><a href="incident_report_I0001.md">Download report</a></p></div>
+<div class="incident-details" id="details-I0002"><table class="inner"><thead><tr><th>Timestamp</th><th>Event</th><th>Detail</th></tr></thead><tbody><tr><td>2026-08-18 15:02:32</td><td>impossible_travel</td><td>eve from IN to CN</td></tr></tbody></table><p><a href="incident_report_I0002.md">Download report</a></p></div>
+<div class="incident-details" id="details-I0003"><table class="inner"><thead><tr><th>Timestamp</th><th>Event</th><th>Detail</th></tr></thead><tbody><tr><td>2026-08-18 15:03:56</td><td>impossible_travel</td><td>carol from JP to CN</td></tr></tbody></table><p><a href="incident_report_I0003.md">Download report</a></p></div>
+<div class="incident-details" id="details-I0004"><table class="inner"><thead><tr><th>Timestamp</th><th>Event</th><th>Detail</th></tr></thead><tbody><tr><td>2026-08-18 15:00:09</td><td>impossible_travel</td><td>bob from IN to DE</td></tr></tbody></table><p><a href="incident_report_I0004.md">Download report</a></p></div>
+<div class="incident-details" id="details-I0005"><table class="inner"><thead><tr><th>Timestamp</th><th>Event</th><th>Detail</th></tr></thead><tbody><tr><td>2026-08-18 15:00:47</td><td>impossible_travel</td><td>frank from IN to US</td></tr></tbody></table><p><a href="incident_report_I0005.md">Download report</a></p></div>
+<div class="incident-details" id="details-I0006"><table class="inner"><thead><tr><th>Timestamp</th><th>Event</th><th>Detail</th></tr></thead><tbody><tr><td>2026-08-18 15:03:08</td><td>impossible_travel</td><td>dave from JP to US</td></tr></tbody></table><p><a href="incident_report_I0006.md">Download report</a></p></div>
+<div class="incident-details" id="details-I0007"><table class="inner"><thead><tr><th>Timestamp</th><th>Event</th><th>Detail</th></tr></thead><tbody><tr><td>2026-08-18 15:01:21</td><td>impossible_travel</td><td>mallory from JP to IN</td></tr></tbody></table><p><a href="incident_report_I0007.md">Download report</a></p></div>
+<div class="incident-details" id="details-I0008"><table class="inner"><thead><tr><th>Timestamp</th><th>Event</th><th>Detail</th></tr></thead><tbody><tr><td>2026-08-18 15:29:37</td><td>port_scan</td><td>ports=[1006, 1024, 1030, 1050, 1071, 1073, 1078, 1082]</td></tr>
+<tr><td>2026-08-18 15:34:21</td><td>brute_force</td><td>failed_count=11</td></tr>
+<tr><td>2026-08-18 15:40:21</td><td>privilege_escalation</td><td>privilege escalation after login</td></tr></tbody></table><p><a href="incident_report_I0008.md">Download report</a></p></div>
       </div>
 
       <script>
